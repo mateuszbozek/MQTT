@@ -64,8 +64,8 @@ def publish_To_Topic(topic, message):
 
 toggle = 0
 
-client = MongoClient(
-    'mongodb+srv://mbozek:<password>@awsdatabase1.b1d6d.mongodb.net/mqtt?retryWrites=true&w=majority')
+# client = MongoClient('mongodb+srv://mbozek:Byczku1@awsdatabase1.b1d6d.mongodb.net/mqtt?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://bart6g:VqIlQIW0Oc9nh6HO@cluster0.vbxui.gcp.mongodb.net/mqtt?retryWrites=true&w=majority')
 db = client.mqtt
 col = db["sensors"]
 tempSensors = []
